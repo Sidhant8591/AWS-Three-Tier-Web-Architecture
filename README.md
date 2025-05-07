@@ -18,16 +18,12 @@ When building a cloud-based application, the underlying architecture and environ
 
 ## Audience:
 
-It is intended for those who have a technical role. The assumption is that you have at least some foundational aws knowledge around VPC, EC2, RDS, S3, ELB and the AWS Console.
-
-
-## Pre-requisites:
-
-1. An AWS account. If you don’t have an AWS account, follow the instructions [here](https://aws.amazon.com/console/) and
-   click on “Create an AWS Account” button in the top right corner to create one.
-1. IDE or text editor of your choice.
+It is intended for those who have a technical role. The assumption is that you have at least some foundational aws knowledge around VPC, EC2, RDS, ALB, ASG and the AWS Console.
 
 ![01 sidhantsays.jpg](01/clip_image002.jpg)
+
+## Download Code from Github
+git clone (https://github.com/Sidhant8591/AWS-Three-Tier-Web-Architecture.git)
 
 ## Let's  started!
 
