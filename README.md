@@ -31,7 +31,7 @@ It is intended for those who have a technical role. The assumption is that you h
 
 ## Let's  started!
 
-**Step 1 Creating VPC**
+### Step 1 Creating VPC
 
 We will start with creating a dedicated VPC.
 
@@ -45,7 +45,7 @@ We will start with creating a dedicated VPC.
 
  ![vpc 03.jpg](01/clip_image006.jpg)
 
-**Step 2 Creating Subnets**
+### Step 2 Creating Subnets
 
 We will create subnets for the VPC.
 
@@ -59,7 +59,7 @@ We will create subnets for the VPC.
 
 ![Screenshot (85).png](01/clip_image012.gif)
 
-**Step 3 Creating Internet Gateway**
+### Step 3 Creating Internet Gateway
 
 We will create an Internet gateway to establish communication between instances in our VPC and the Internet.
 
@@ -75,7 +75,7 @@ We will create an Internet gateway to establish communication between instances 
 
 ![Screenshot (87).png](01/clip_image016.gif)
 
-**Step 4 Creating Route Tables**
+### Step 4 Creating Route Tables
 
 Route tables control the traffic flow between subnets within the VPC and to and from the internet. A route table contains a set of rules, or routes, that specify how traffic should be directed from one subnet to another, or to an external destination. Therefore, we need to create route tables for the newly created Internet gateway.
 
@@ -107,7 +107,7 @@ Route tables control the traffic flow between subnets within the VPC and to and 
 
 ![Screenshot (89).png](01/clip_image028.gif)
 
-**Step 5  Create a NAT Gateway**
+### Step 5  Create a NAT Gateway
 
 A NAT gateway allows instances from the private subnets to connect to resources outside of the VPC and the Internet (for necessary services such as patches or package updates).
 
@@ -165,7 +165,7 @@ Done! You’ve just created a ready-to-go blueprint for launching web servers.
 
 Under ‘_Advanced details > User data,_’ we need to paste in our script that installs an Apache web server and a basic HTML web page. You can view the specific script (script [here](file:///C:/Users/Naman/Downloads/bash-scripts-main.zip) or [https://github.com/Sidhant8591/bash\_script.git](https://github.com/Sidhant8591/bash_script.git)).
 
-### 2: Set Up an Auto Scaling Group (ASG)
+## 2: Set Up an Auto Scaling Group (ASG)
 
 Now that we’ve got our launch template ready, it’s time to create an **Auto Scaling Group** — this is what makes sure your blog stays up and running even when traffic changes or something goes wrong.
 
