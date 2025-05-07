@@ -249,11 +249,11 @@ Let's confirm that we can SSH into our EC2 server.
 
 ![Screenshot (102).png](01/clip_image047.gif)
 
-### Success!
+## Success!
 
 Awesome job! You’ve just set up the **Web Tier** for your **Blog Demo** — nice work! This layer is all about the **user experience** — it’s what your visitors will see and interact with when they land on your site. From the servers to the load balancer, everything’s in place to deliver your blog smoothly and reliably to the world.
 
-**Tier 2: Application Tier (Backend)**
+## Tier 2: Application Tier (Backend)
 
 Now that the Web Tier is ready, let’s move to the Application Tier — the backend of your Blog app. This is where all the core logic happens. It's the middle layer that connects the frontend (Web Tier) with the database.
 
@@ -318,7 +318,7 @@ Review and create the template.
 
 Just like we did for the Web Tier, we’ll now set up an **Auto Scaling Group (ASG)** to manage our **backend servers**. This group will automatically launch or remove EC2 instances based on your app’s needs — helping with performance and reliability.
 
-#### Here's how:
+### Here's how:
 
 1.       Go to the **Auto Scaling Groups** section in the EC2 Console.
 
@@ -334,7 +334,7 @@ These private subnets keep your application layer protected from direct internet
 
 ![Screenshot (104).png](01/clip_image052.gif)
 
-### 3: Create an Internal Application Load Balancer (ALB)
+## 3: Create an Internal Application Load Balancer (ALB)
 
 Now it’s time to create another **Application Load Balancer (ALB)** — but this one won’t face the internet.
 
@@ -440,13 +440,13 @@ And then SSH into our app server (remember, we need the **private IPv4** addre
 
 ![Screenshot (124).png](01/clip_image070.jpg)
 
-### Success!
+## Success!
 
 You did it! The **Application Tier** for your **Blog** is all set up.
 
 This is the **backend layer** — the place where your app’s core logic and source code live. It handles everything that goes on behind the scenes and connects the Web Tier (frontend) with the Database Tier (data storage). Everything is now working together smoothly!
 
-### Tier 3: Database Tier (Data Storage & Retrieval)
+## Tier 3: Database Tier (Data Storage & Retrieval)
 
 You're almost done! Now it's time to build the final layer of your **Blog app's architecture** — the **Database Tier**.
 
@@ -467,11 +467,11 @@ This is the actual database where all your blog data will be stored and accessed
 
 ![01 sidhantsays.jpg](01/clip_image071.jpg)
 
-### 1:Create a Database Security Group
+## 1:Create a Database Security Group
 
 Before your database can talk to your app servers, we need to set up a **security group** that allows safe and limited access.
 
-#### Here’s what to do:
+### Here’s what to do:
 
 1.      Go to the **VPC Console** and navigate to **Security Groups**.
 
@@ -499,11 +499,11 @@ Now, we need to add inbound AND outbound rules that allow MySQL requests to and 
 
 ![Screenshot (114).png](01/clip_image075.gif)
 
-### 2:Create a DB Subnet Group
+## 2:Create a DB Subnet Group
 
 To make sure your database is placed in the **right private subnets**, we need to create a **DB subnet group**. This tells RDS where it’s allowed to launch the database within your VPC.
 
-#### Follow these steps:
+### Follow these steps:
 
 1.       Open the **RDS Console**.
 
@@ -547,11 +547,11 @@ o    Pick **two private subnets** — e.g., `subnet-private3` and `subnet-pri
 
 This step ensures your **MySQL RDS instance** is deployed in the right secure zones and is resilient across multiple AZs.
 
-### 3: Create an RDS Database
+## 3: Create an RDS Database
 
 Now that everything’s set up, it’s time to actually **create the database** that your app will use to store and retrieve data.
 
-#### Here's how to do it:
+### Here's how to do it:
 
 1.      Go to the **RDS Console**.
 
@@ -559,7 +559,7 @@ Now that everything’s set up, it’s time to actually **create the database** 
 
 3.     Click the **“Create database”** button.
 
-#### Choose the following options:
+### Choose the following options:
 
 ·         **Engine type:** MySQL
 
@@ -571,7 +571,7 @@ Now that everything’s set up, it’s time to actually **create the database** 
 
 ·         **Password:** Set a strong password and save it safely!
 
-#### Under Connectivity:
+### Under Connectivity:
 
 ·         **VPC:** Select your **Blog VPC**
 
@@ -631,12 +631,12 @@ When prompted, enter the password you chose when creating the DB.
 
 Great! We successfully connected to our database from our application server!
 
-**Success!**
+## Success!
 
   
 That was a solid effort! It might’ve seemed like a lot, but by breaking it down step-by-step, we made it through. You’ve now built a **highly available, secure, and scalable 3-tier architecture**—fully ready to support your **Blog app** on AWS.
 
-### Cleanup Checklist
+## Cleanup Checklist
 
 Before you call it a day, make sure to **delete the following**:
 
