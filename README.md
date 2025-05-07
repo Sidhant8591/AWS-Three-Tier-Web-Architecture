@@ -189,7 +189,7 @@ That’s it! The ASG will now monitor traffic and **automatically add or remove 
 
 ![Screenshot (98).png](01/clip_image037.gif)
 
-### 3: Set Up an Application Load Balancer (ALB)
+## 3: Set Up an Application Load Balancer (ALB)
 
 Next up, we need an **Application Load Balancer (ALB)** — this acts like a smart traffic manager for your blog. It takes all the incoming web traffic and sends it to the right EC2 instances behind the scenes.
 
@@ -314,7 +314,7 @@ sudo yum install mysql -y
 
 Review and create the template.
 
-### 2:Create an Auto Scaling Group (ASG)
+## 2:Create an Auto Scaling Group (ASG)
 
 Just like we did for the Web Tier, we’ll now set up an **Auto Scaling Group (ASG)** to manage our **backend servers**. This group will automatically launch or remove EC2 instances based on your app’s needs — helping with performance and reliability.
 
@@ -658,6 +658,6 @@ _Tip: Always double-check the_ **Billing Dashboard** _after cleanup to ensure no
 
 Done right, and you're good to go without any unexpected AWS bills. Let me know  if you want a script or guide for clean-up!
 
-**Thank you!**
+## Thank you!
 
 Thank you for following me on my cloud computing journey. I hope this article was helpful and informative.
