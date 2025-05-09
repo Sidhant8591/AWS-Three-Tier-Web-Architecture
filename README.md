@@ -2,6 +2,8 @@
 
 ## Description:
 
+Building modern web applications requires a design that's scalable, secure, and easy to maintain. One of the most popular design patterns to achieve this is the Three-Tier Architecture. In this blog, we'll explore what it is, why it's useful, and how to build it using AWS.
+
 When building a cloud-based application, the underlying architecture and environment are just as critical as the application itself. There are many considerations when deciding on the proper architecture of your app:
 
 **Scalability**: How easily and/or frequently does the app need to scale up or down? How much value do you put into not having to constantly micro-manage and monitor resource usage?
