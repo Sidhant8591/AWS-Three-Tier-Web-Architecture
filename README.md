@@ -656,6 +656,6 @@ _Tip: Always double-check the_ **Billing Dashboard** _after cleanup to ensure no
 
 Done right, and you're good to go without any unexpected AWS bills. Let me know  if you want a script or guide for clean-up!
 
-## Thank you!
+### Thank you!
 
 Thank you for following me on my cloud computing journey. I hope this article was helpful and informative.
