@@ -52,7 +52,7 @@ app.get('/transaction',(req,res)=>{
     }
 });
 
-//DELETE ALL TRANSACTIONS
+            //DELETE ALL TRANSACTIONS
 app.delete('/transaction',(req,res)=>{
     try{
         transactionService.deleteAllTransactions(function(result){
@@ -64,7 +64,7 @@ app.delete('/transaction',(req,res)=>{
     }
 });
 
-//DELETE ONE TRANSACTION
+         //DELETE ONE TRANSACTION
 app.delete('/transaction/id', (req,res)=>{
     try{
         //probably need to do some kind of parameter checking
@@ -77,9 +77,9 @@ app.delete('/transaction/id', (req,res)=>{
     }
 });
 
-//GET SINGLE TRANSACTION
+           //GET SINGLE TRANSACTION
 app.get('/transaction/id',(req,res)=>{
-    //also probably do some kind of parameter checking here
+           //also probably do some kind of parameter checking here
     try{
         transactionService.findTransactionById(req.body.id,function(result){
             res.statusCode = 200;
